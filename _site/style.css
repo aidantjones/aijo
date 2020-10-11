@@ -1,0 +1,752 @@
+/*
+Fonts
+Apple Garamond */
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/bold-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "apple-garamond";
+  src: url("/assets/fonts/apple-garamond/light-italic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Constructivist */
+
+@font-face {
+  font-family: "constructivist-line";
+  src: url("/assets/fonts/p22-constructivist-line.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "constructivist";
+  src: url("/assets/fonts/p22-constructivist-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Garamond */
+
+@font-face {
+  font-family: "garamond";
+  src: url("/assets/fonts/garamond/regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garamond";
+  src: url("/assets/fonts/garamond/italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "garamond";
+  src: url("/assets/fonts/garamond/semibold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garamond";
+  src: url("/assets/fonts/garamond/semibold-italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Global */
+
+body {
+  font-family: garamond, serif;
+  font-size: 1.25rem;
+}
+
+:root {
+  --slate: #232323;
+  --ashen: #3d3b3b;
+  --radius: 15px;
+}
+
+/* Keyframes */
+
+@keyframes sky {
+  0% { background-position: 0% 4%; }
+  100% { background-position: 100% 97%; }
+}
+
+@keyframes fire {
+  0% {
+    text-shadow: none;
+  }
+
+  33% {
+    text-shadow: -2px 2px 0 rgb(255, 217, 133, 0.5);
+  }
+
+  66% {
+    text-shadow:
+      -2px 2px 0 rgb(255, 217, 133, 0.5),
+      -5px 5px 0 rgb(237, 168, 50, 0.3);
+  }
+
+  100% {
+    text-shadow:
+      -2px 2px 0 rgb(255, 217, 133, 0.5),
+      -5px 5px 0 rgb(237, 168, 50, 0.3),
+      -7px 7px 0 rgb(138, 21, 21, 0.1);
+  }
+}
+
+@keyframes fire-box {
+  0% {
+    box-shadow: none;
+  }
+
+  33% {
+    box-shadow: -2px 2px 0 rgb(255, 217, 133, 0.5);
+  }
+
+  66% {
+    box-shadow:
+      -2px 2px 0 rgb(255, 217, 133, 0.5),
+      -5px 5px 0 rgb(237, 168, 50, 0.3);
+  }
+
+  100% {
+    box-shadow:
+      -2px 2px 0 rgb(255, 217, 133, 0.5),
+      -5px 5px 0 rgb(237, 168, 50, 0.3),
+      -7px 7px 0 rgb(138, 21, 21, 0.1);
+  }
+}
+
+@keyframes dark {
+  0% {
+    color: inherit;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home */
+
+.home {
+  background: linear-gradient(90deg, #805fc6, #482c66, #232323);
+  background-size: 800% 800%;
+  animation: sky 30s ease forwards;
+  margin: 3rem;
+  color: white;
+}
+
+.home h2,
+.home a,
+.home li,
+.home li a {
+  color: white;
+}
+
+.home h1 {
+  font-family: constructivist-line;
+  font-size: 12.2vw;
+  text-align: center;
+  margin: 0;
+  animation: fire 0.5s infinite alternate;
+  animation-delay: 10s;
+}
+
+.home h1:hover {
+  color: rgb(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+.home header p:first-of-type {
+  text-align: right;
+  font-style: italic;
+  font-size: 4vw;
+  margin: 0.5rem 3rem;
+}
+
+.home nav > ul li:first-of-type {
+  display: none;
+}
+
+.home nav {
+  margin-top: 2rem;
+}
+
+.home nav > ul {
+  list-style: none;
+  display: grid;
+  place-items: center center;
+  place-content: center center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 0;
+}
+
+.home ul li a {
+  font-size: 4vw;
+  font-family: apple-garamond;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.5s;
+  font-weight: bold;
+  font-family: apple-garamond;
+}
+
+.home ul li a:hover {
+  animation: fire 0.5s forwards;
+}
+
+.home nav > ul > li > a {
+  font-size: clamp(20px, 4vw, 80px);
+}
+
+h2 {
+  font-weight: 700;
+  text-align: left;
+}
+
+.home footer {
+  display: flex;
+  flex-direction: column-reverse;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.posts h2 {
+  text-transform: uppercase;
+}
+
+.posts h2 span {
+  display: inline-block;
+}
+
+.posts h2:hover span {
+  animation: spin 1s ease;
+}
+
+.posts ul li a {
+  font-size: 1rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.posts ul li a time {
+  font-family: apple-garamond;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.posts ul li a:hover,
+.posts ul li:hover {
+  animation: fire 0.5s forwards;
+  color: white;
+}
+
+.copyright {
+  padding: 1rem;
+}
+
+.copyright a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.copyright a {
+  color: white;
+}
+
+/* Post */
+
+body {
+  background-color: var(--slate);
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  max-width: 1280px;
+  margin: auto;
+}
+
+nav ul li:first-child a {
+  font-family: constructivist;
+  font-size: 3rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: apple-garamond;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  animation: fire 0.5s infinite alternate;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.post .table-of-contents a {
+  color: white;
+  text-decoration: none;
+}
+
+.post .table-of-contents a:hover {
+  animation: fire 0.5s infinite alternate;
+}
+
+.post .table-of-contents > ol {
+  list-style: upper-roman;
+}
+
+.post .table-of-contents > ol > li {
+  text-transform: uppercase;
+}
+
+.post .table-of-contents > ol > li > ol {
+  list-style: lower-alpha;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.post .table-of-contents > ol > li > ol > li > ol > li {
+  font-weight: normal;
+}
+
+.post .table-of-contents > ol > li > ol > li > ol > li > ol {
+  list-style: lower-roman;
+  font-style: italic;
+}
+
+.post .table-of-contents > ol > li > ol > li > ol > li > ol > li > ol {
+  list-style: upper-alpha;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.post article {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 2rem;
+  margin: 1rem;
+  word-break: break-word;
+  max-width: 1125px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.post article header { grid-area: 1 / 1 / 2 / 2; }
+
+.post h1 {
+  font-family: apple-garamond;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 0;
+  word-break: normal;
+}
+.post article nav { grid-area: 2 / 1 / 3 / 2; }
+
+.post article .post-content {
+  grid-area: 1 / 2 / 3 / 3;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.post article .post-content a {
+  color: white;
+  transition: 0.2s;
+}
+
+.post article .post-content h2 {
+  font-family: apple-garamond;
+  font-size: 2.5rem;
+  width: 100%;
+  background-color: var(--ashen);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.post article .post-content h2:first-of-type {
+  margin-top: 0;
+}
+
+.post article .post-content > * {
+  padding: 0 0.75rem;
+}
+
+.post article .post-content > ul {
+  padding: 0 3rem;
+}
+
+.post article .post-content h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.post article .post-content h4 {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.post article .post-content h5 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.post article .post-content h6 {
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.post article .post-content figure {
+  margin: 0;
+  background-color: var(--ashen);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.post article .post-content figure figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post article .post-content a:hover {
+  animation: fire 0.5s forwards;
+  transition: 0.2s;
+}
+
+.post article .post-content img,
+.post article .post-content video {
+  width: 100%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 4rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.back-to-top:visited {
+  color: var(--slate);
+}
+
+.back-to-top:hover span {
+  animation: spin 1s ease;
+}
+
+.back-to-top span {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.post .dates div {
+  font-family: apple-garamond;
+  font-size: 1.5rem;
+}
+
+/* Projects */
+
+.min-width {
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.min-width h1 {
+  text-align: center;
+  font-family: constructivist-line;
+  font-size: clamp(40px, 8vw, 5rem);
+}
+
+/* .min-width em {
+  font-size: 1rem;
+} */
+
+.min-width a {
+  color: white;
+}
+
+.min-width a:hover {
+  animation: fire 0.5s forwards;
+  transition: 0.2s;
+}
+
+.projects > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  list-style: none;
+  color: white;
+  grid-gap: 2rem;
+  padding: 0 1% 1% 1%;
+}
+
+.projects > ul li {
+  padding: 1rem;
+  background-color: var(--ashen);
+  border-radius: var(--radius);
+  box-shadow: -6px 11px 52px -16px rgba(0, 0, 0, 0.75);
+  transition: all 0.15s ease-in-out;
+}
+
+.projects > ul li:hover {
+  animation: fire-box 0.5s infinite alternate;
+  scale: 1.05;
+}
+
+.projects > ul li img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.projects > ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects > ul li a:hover {
+  animation: unset;
+}
+
+.projects ul li a h2 {
+  font-family: apple-garamond;
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.projects > ul li a:visited {
+  color: white;
+}
+
+.posts-page > ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 0 1rem;
+}
+
+.posts-page > ul > li + li {
+  margin-top: 1rem;
+}
+
+.posts-page > ul li a {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 2rem;
+  color: white;
+  text-decoration: none;
+  min-height: 15rem;
+}
+
+.posts-page > ul li a:hover {
+  animation: unset;
+}
+
+.posts-page > ul li {
+  padding: 2rem;
+  background-color: var(--ashen);
+  border-radius: var(--radius);
+  transition: all 0.15s ease-in-out;
+}
+
+.posts-page > ul li:hover {
+  animation: fire-box 0.5s infinite alternate;
+  scale: 1.02;
+  transition: all 0.15s ease-in-out;
+}
+
+.posts-page > ul li a img {
+  width: 100%;
+  object-fit: cover;
+  margin-left: auto;
+  border-radius: var(--radius);
+  height: 15rem;
+}
+
+.posts-page > ul li a div {
+}
+
+.posts-page > ul li a div h2 {
+  font-family: apple-garamond;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.posts-page > ul li a div p {
+  font-size: 1rem;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+.latex sub,
+.latex sup {
+  text-transform: uppercase;
+}
+
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex,
+.latex sub {
+  font-size: 1rem;
+}
+
+.text {
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+  body > nav ul {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .post article {
+    display: block;
+  }
+
+  .post .table-of-contents > ol > li > ol > li > ol > li > ol > li > ol {
+    display: none;
+  }
+}
+
+.about-me ul li a h2 {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4.7rem);
+  margin: 0;
+  font-family: apple-garamond;
+}
+
+.about-me ul li a {
+  display: block;
+  min-height: unset;
+}
+
+.missing section {
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.missing h1 {
+  font-family: constructivist-line;
+  font-size: clamp(4rem, 5vw, 9rem);
+}
+
+.missing p {
+  font-family: apple-garamond;
+  font-size: 1.5rem;
+}
+
+.missing a {
+  color: white;
+}
+
+.resume-page article nav > ol > li > ol {
+  display: none;
+}
+
+.text main {
+  max-width: 600px;
+  margin: auto;
+}

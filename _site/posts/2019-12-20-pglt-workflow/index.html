@@ -1,0 +1,97 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+    <title>The PGLT Workflow: Automatic PDF generation from GitHub repos of LaTeX projects</title>
+  </head>
+  
+  <body class="post the-pglt-workflow:-automatic-pdf-generation-from-github-repos-of-latex-projects-page">
+    <nav>
+  <ul>
+    <li>
+      <a href="/">
+        AJ
+      </a>
+    </li>
+    <li>
+      <a href="/about-me">
+        About Me
+      </a>
+    </li>
+    <li>
+      <a href="/projects">
+        Projects
+      </a>
+    </li>
+    <li>
+      <a href="/posts">
+        Posts
+      </a>
+    </li>
+    <li>
+      <a href="mailto:aidan@aidanjon.es">
+        Email
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.linkedin.com/in/aidantjones/">
+        LinkedIn
+      </a>
+    </li>
+    <!-- <li>
+      <a target="_blank" href="https://github.com/aidantjones">
+        GitHub
+      </a>
+    </li> -->
+  </ul>
+</nav>
+
+    <article>
+      <header>
+        <h1>The PGLT Workflow: Automatic PDF generation from GitHub repos of LaTeX projects</h1>
+        <section class="dates">
+          <div>Published: <time>Dec 19, 2019</time></div>
+          <div>Last Updated: <time>Oct 11, 2020</time></div>
+        </section>
+      </header>
+
+      <section class="post-content">
+<h2 id="what"><a class="header-anchor" href="#what"></a> What</h2>
+<p>This workflow automatically compiles PDFs of your <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> project on the fly based on the most recent version, all just by clicking a link available to anyone.</p>
+<h2 id="why"><a class="header-anchor" href="#why"></a> Why</h2>
+<p>Anyone who’s worked on a large writing project knows the pains of manual versioning. GitHub is a popular version control platform. I wanted to build the final link in the chain to enable automatic, web-based <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> PDF creation.</p>
+<h2 id="how"><a class="header-anchor" href="#how"></a> How</h2>
+<p>It is entirely web-based (see “Notes” for alternate setups), utilizing <a href="http://overleaf.com" target="_blank">Overleaf</a> and <a href="https://latexonline.cc/" target="_blank"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> Cloud Compiler</a>.</p>
+<h2 id="instructions"><a class="header-anchor" href="#instructions"></a> Instructions</h2>
+<ol>
+<li>Create or use an existing <a href="http://overleaf.com" target="_blank">Overleaf</a> project</li>
+<li>Within that project, click on the “GitHub” link in the menu</li>
+<li>This will prompt you to create a repo for the project. For the rest of this sequence to work, it must be public</li>
+<li>Copy GitHub’s repo link</li>
+<li>Enter it into the <a href="https://latexonline.cc/" target="_blank"><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> Cloud Compiler</a></li>
+<li>Click “Generate Build URL” and copy the resulting URL in your address bar. This is essentially your new PDF link that can be used to grab the most recent version of your project</li>
+</ol>
+<h2 id="notes"><a class="header-anchor" href="#notes"></a> Notes</h2>
+<p>You don’t need to use Overleaf to create the repo; it can originate from anywhere. The process is just easier with Overleaf for those who may not be as familiar with manual setup.</p>
+<h2 id="limitations"><a class="header-anchor" href="#limitations"></a> Limitations</h2>
+<ul>
+<li><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> Cloud Compiler only contains the compilers pdflatex, xelatex, and lualatex. These should work for almost everyone, however.</li>
+<li>PDFs may compile slightly different. On my document, the only difference I noticed was a multicols environment not behaving as expected (with or without the asterisk). It produced a flush end to a section instead of a ragged one like on Overleaf. Using <code>\twocolumn</code> fixed the problem. Therefore, you may have to troubleshoot similar issues if your document is complex.</li>
+</ul>
+</section>
+
+    </article>
+    <a class="back-to-top" href="#" title="Get me back to the top!">
+      <span>
+        ▲
+      </span>
+    </a>
+    </div>
+  </body>
+</html>

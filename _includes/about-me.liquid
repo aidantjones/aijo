@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include meta.liquid %}
+    <title>{{ title }} - Aidan Jones</title>
+  </head>
+  <body class="posts-page min-width about-me">
+    {% include header.liquid %}
+    <h1>{{ title }}</h1>
+    {% assign slug == {{ title | strip | slug }} %}
+    <ul>
+      {%- for item in collections[slug] -%}
+        <li>
+          <a href="{{ item.url }}">
+              <h2>{{ item.data.title }}</h2>
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </body>
+</html>

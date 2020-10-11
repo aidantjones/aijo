@@ -1,0 +1,30 @@
+{% include vars.liquid %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include meta.liquid %}
+    <title>{{title | strip_html }}</title>
+  </head>
+  {% assign slug == {{ title | strip | slug | strip_html }} %}
+  <body class="post {{ slug }}-page">
+    {% include header.liquid %}
+    <article>
+      <header>
+        <h1>{{title}}</h1>
+        <section class="dates">
+          <div>Published: <time>{{ my_date }}</time></div>
+          <div>Last Updated: <time>{{ "now" | date: "%b %d, %Y" }}</time></div>
+        </section>
+      </header>
+
+      {{ content }}
+    </article>
+    <a class="back-to-top" href="#" title="Get me back to the top!">
+      <span>
+        ▲
+      </span>
+    </a>
+    </div>
+  </body>
+</html>
