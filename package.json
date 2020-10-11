@@ -16,5 +16,8 @@
     "markdown-it-table-of-contents": "^0.4.4",
     "markdown-it-toc-done-right": "^4.1.0",
     "parse-json": "^5.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
   }
 }
