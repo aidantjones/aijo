@@ -10,9 +10,16 @@
     {% assign slug == {{ title | strip | slug }} %}
     <ul>
       {%- for item in collections[slug] reversed -%}
+        {%- assign url         = item.data.external_url -%}
+        {%- assign is_external = true -%}
+
+        {%- if url == blank -%}
+          {%- assign url         = item.url -%}
+          {%- assign is_external = false    -%}
+        {%- endif -%}
         <li>
-          <a href="{{ item.url }}">
-            <img src="{{ item.data.image }}" alt="">
+          <a href="{{ url }}" {%- if is_external -%}target="_blank"{%- endif -%}>
+            <img src="{{ item.data.image }}" alt="{{ item.data.alt}}" loading="lazy">
             <h2>{{ item.data.title }}</h2>
             <hr>
             <p>{{ item.data.description }}</p>
