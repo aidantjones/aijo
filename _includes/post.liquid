@@ -4,6 +4,9 @@
 <html lang="en">
   <head>
     {% include meta.liquid %}
+    {%- if description -%}
+      <meta name="description" content="{{ description }}">
+    {%- endif -%}
     <title>{{title | strip_html }}</title>
   </head>
   {% assign slug == {{ title | strip | slug | strip_html }} %}
