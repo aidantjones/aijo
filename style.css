@@ -672,20 +672,13 @@ nav ul li a:visited {
   color: white;
   text-decoration: none;
   min-height: 15rem;
-}
-
-.posts-page > ul li a:hover {
-  animation: unset;
-}
-
-.posts-page > ul li {
   padding: 2rem;
   background-color: var(--ashen);
   border-radius: var(--radius);
   transition: all 0.15s ease-in-out;
 }
 
-.posts-page > ul li:hover {
+.posts-page > ul li a:hover {
   animation: fire-box 0.5s infinite alternate;
   scale: 1.02;
   transition: all 0.15s ease-in-out;
@@ -703,13 +696,17 @@ nav ul li a:visited {
 }
 
 .posts-page > ul li a div h2 {
-  font-family: apple-garamond;
+  font-family: var(--header);
+  font-weight: var(--button-weight);
   font-size: 2rem;
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
 }
 
 .posts-page > ul li a div p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .latex sup {
