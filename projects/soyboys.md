@@ -28,11 +28,12 @@ Introduction
 There is no doubt a connection between the consumption of meat and masculinity. It appears in books, articles, and as a trope in the media: from the rugged cowboy figure killing and eating his own game to recent ads depicting men dismissing "tofu" for a double Whopper ([Sobal 2006](#sobal)). And this phenomenon is not limited to the Western hemisphere. It exists in places from Argentina to Japan ([DeLessio-Parson 2017](#delassio); [Morioka 2013](#morioka)).
 
 <figure>
-  <video controls>
-    <source src="../../assets/video/manthem.mp4" type="video/mp4">
-    Damn, there's supposed to be a video here.
-  </video>
-  <figcaption>The infamous Manthem that depicts men foregoing tofu for a Whopper.</figcaption>
+  <div class="video-wrapper">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/v9e4QD1zm0Q" allowfullscreen="" frameborder="0" title="Manthem, Burger King commercial"></iframe>
+  </div>
+  <figcaption>
+    One of the most famous examples of this type of commercial, Burger King's "Manthem."
+  </figcaption>
 </figure>
 
 Many call on biology and human evolution to explain men's supposed natural affliction for meat. Researchers draw upon men's stronger physique and reference the adaptations humans have gone under to process meat better than our primate ancestors. All this is to argue that nature has designed men to eat meat ([Leroy and Praet 2015](#leroy); such as discussed by [Zink and Lieberman 2016](#zink)). By extension, some argue that women desire these masculine traits as well ([Sell, Lukazsweski, and Townsley 2017](#sell)).
@@ -66,7 +67,7 @@ More recently, Kristen Barber utilized a framework in her work on the men's groo
 
 <figure>
   <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/4XttdO1yipo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/4XttdO1yipo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Clip from Seinfeld's &quot;The Wink&quot;"></iframe>
   </div>
   <figcaption>
     Jerry makes a grave mistake by ordering a salad in <a href="https://www.youtube.com/embed/4XttdO1yipo">"The Wink."</a>
@@ -171,7 +172,7 @@ Some contemporary followers of this movement have adopted Hitler's stance by als
 
 <figure>
   <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/FQd12gFWKb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/FQd12gFWKb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Balaclava Küche, episode 1"></iframe>
   </div>
   <figcaption>
     <a href="http://www.youtube.com/watch?v=FQd12gFWKb8">Balaclava Küche, episode 1</a>
