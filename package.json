@@ -1,14 +1,19 @@
 {
   "name": "aijo-eleventy",
   "version": "1.0.0",
-  "description": "Aidan Jones's Eleventy website",
+  "description": "Aidan Jones's site",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test":    "echo \"Error: no test specified\" && exit 1",
+    "dev":     "npx @11ty/eleventy --serve",
+    "compile": "npx @11ty/eleventy"
   },
   "author": "Aidan Jones",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-plugin-lazyimages": "^2.1.0",
+    "lazysizes": "^5.3.2",
     "eleventy-plugin-toc": "^1.0.1",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7",
@@ -16,8 +21,5 @@
     "markdown-it-table-of-contents": "^0.4.4",
     "markdown-it-toc-done-right": "^4.1.0",
     "parse-json": "^5.0.0"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
   }
 }
