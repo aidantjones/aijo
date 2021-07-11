@@ -2,7 +2,7 @@
 title: "Coming Soon - Scoring <i>The Stranger</i>"
 description: "Using music to foreground underrepresented, everyday fear"
 layout: post
-tags: projects
+tags: 
 date: 2020-10-11
 image: "/assets/img/projects/stranger.png"
 ---
