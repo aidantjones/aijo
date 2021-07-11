@@ -4,5 +4,6 @@ description: "A sociological video series serving up sweet, scholarly, and satis
 layout: post
 tags: projects
 date: 2020-07-10
-image: "/assets/img/projects/sps.png"
+image: "/assets/img/projects/sps.jpg"
+external_url: "https://www.sweetpotatosociology.com"
 ---
