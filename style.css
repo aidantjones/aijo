@@ -598,11 +598,17 @@ nav ul li a:visited {
 
 .projects > ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   list-style: none;
   color: white;
   grid-gap: 2rem;
-  padding: 0 1% 1% 1%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 340px) {
+  .projects > ul {
+    padding: 0 .75rem;
+  }
 }
 
 .projects > ul li {
@@ -635,9 +641,14 @@ nav ul li a:visited {
 }
 
 .projects ul li a h2 {
-  font-family: apple-garamond;
+  font-family: var(--header);
+  font-weight: var(--button-weight);
   font-size: 1.75rem;
   margin: 0.5rem 0;
+}
+
+.projects ul li p {
+  line-height: 1.25;
 }
 
 .projects > ul li a:visited {
