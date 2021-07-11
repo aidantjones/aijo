@@ -788,6 +788,14 @@ nav ul li a:visited {
   color: white;
 }
 
+.resume-page .post-content > * {
+  padding-left: 2rem;
+}
+
+.resume-page .post-content > ul {
+  padding-left: 4rem;
+}
+
 .resume-page article nav > ol > li > ol {
   display: none;
 }
