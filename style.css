@@ -183,32 +183,42 @@ h1 {
 }
 
 .home h1 {
-  font-family: constructivist-line;
-  font-size: 12.2vw;
+  font-family: var(--header);
+  letter-spacing: var(--header-spacing);
+  font-size: clamp(5rem, 12.2vw, 13rem);
+  line-height: 1;
   text-align: center;
   margin: 0;
-  animation: fire 0.5s infinite alternate;
-  animation-delay: 10s;
 }
 
-.home h1:hover {
-  color: rgb(0, 0, 0, 0);
-  transition: 0.3s;
+.home header {
+  grid-area: header;
 }
 
 .home header p:first-of-type {
   text-align: right;
   font-style: italic;
-  font-size: 4vw;
-  margin: 0.5rem 3rem;
+  font-size: clamp(2rem, 2vw, 3rem);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .home header p:first-of-type {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .home nav > ul {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.home nav {
+  grid-area: nav;
 }
 
 .home nav > ul li:first-of-type {
   display: none;
-}
-
-.home nav {
-  margin-top: 2rem;
 }
 
 .home nav > ul {
@@ -224,12 +234,10 @@ h1 {
 
 .home ul li a {
   font-size: 4vw;
-  font-family: apple-garamond;
   font-weight: 400;
   text-decoration: none;
   transition: 0.5s;
   font-weight: bold;
-  font-family: apple-garamond;
 }
 
 .home ul li a:hover {
@@ -237,7 +245,9 @@ h1 {
 }
 
 .home nav > ul > li > a {
-  font-size: clamp(20px, 4vw, 80px);
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-family: var(--header);
+  font-variation-settings: var(--button-weight);
 }
 
 h2 {
