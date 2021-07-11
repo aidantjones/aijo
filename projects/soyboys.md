@@ -5,9 +5,15 @@ layout: post
 tags: projects
 date: 2019-05-06
 image: "/assets/img/soyboys/roast.jpg"
+alt: "A man admiring a roast that a woman is retrieving from the oven"
 ---
 
-[[toc]]
+<details>
+  <summary>Table of Contents</summary>
+
+  [[toc]]
+
+</details>
 
 <section class="post-content">
 
