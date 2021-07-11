@@ -355,6 +355,15 @@ nav ul li a:visited {
   color: white;
 }
 
+.post details {
+  margin-top: 2rem;
+}
+
+.post summary {
+  font-family: var(--header);
+  font-variation-settings: var(--subheader-weight);
+}
+
 .post .table-of-contents a {
   color: white;
   text-decoration: none;
@@ -366,6 +375,12 @@ nav ul li a:visited {
 
 .post .table-of-contents > ol {
   list-style: upper-roman;
+  line-height: 1.5;
+  font-family: var(--header);
+}
+
+.post .table-of-contents > ol a {
+  font-family: var(--body);
 }
 
 .post .table-of-contents > ol > li {
@@ -375,7 +390,11 @@ nav ul li a:visited {
 .post .table-of-contents > ol > li > ol {
   list-style: lower-alpha;
   text-transform: none;
-  font-weight: bold;
+  font-size: 1rem;
+}
+
+.post .table-of-contents > ol > li > ol > li > a {
+  font-size: 1.25rem;
 }
 
 .post .table-of-contents > ol > li > ol > li > ol > li {
@@ -395,7 +414,8 @@ nav ul li a:visited {
 }
 
 .post article {
-  display: grid;
+  /* display: grid; */
+  font-family: var(--body);
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto 1fr;
   grid-column-gap: 2rem;
@@ -409,7 +429,8 @@ nav ul li a:visited {
 .post article header { grid-area: 1 / 1 / 2 / 2; }
 
 .post h1 {
-  font-family: apple-garamond;
+  line-height: 1.25;
+  margin-bottom: 2rem;
   font-weight: bold;
   font-size: 3rem;
   margin-top: 0;
@@ -418,9 +439,9 @@ nav ul li a:visited {
 .post article nav { grid-area: 2 / 1 / 3 / 2; }
 
 .post article .post-content {
-  grid-area: 1 / 2 / 3 / 3;
   max-width: 40rem;
-  margin: 0 auto;
+  margin: 4rem auto;
+  line-height: 1.5;
 }
 
 .post article .post-content a {
@@ -429,34 +450,32 @@ nav ul li a:visited {
 }
 
 .post article .post-content h2 {
-  font-family: apple-garamond;
-  font-size: 2.5rem;
+  font-family: var(--header);
+  line-height: 1.25;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
   width: 100%;
   background-color: var(--ashen);
   border-radius: var(--radius);
-  padding: 0.75rem;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .post article .post-content h2:first-of-type {
   margin-top: 0;
 }
 
-.post article .post-content > * {
-  padding: 0 0.75rem;
-}
-
-.post article .post-content > ul {
+/* .post article .post-content > ul {
   padding: 0 3rem;
-}
+} */
 
 .post article .post-content h3 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .post article .post-content h4 {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .post article .post-content h5 {
@@ -540,21 +559,27 @@ nav ul li a:visited {
 }
 
 .post .dates div {
-  font-family: apple-garamond;
   font-size: 1.5rem;
+  font-family: var(--header);
+  font-variation-settings: var(--subheader-weight);
+}
+
+.post .dates time {
+  font-variation-settings: 'wght' 350;
+  font-size: 1.25rem;
 }
 
 /* Projects */
 
 .min-width {
-  max-width: 1280px;
+  max-width: var(--body-width);
   margin: auto;
   padding-bottom: 2rem;
 }
 
 .min-width h1 {
   text-align: center;
-  font-family: constructivist-line;
+  font-family: var(--header);
   font-size: clamp(40px, 8vw, 5rem);
 }
 
