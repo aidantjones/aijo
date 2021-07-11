@@ -736,7 +736,11 @@ nav ul li a:visited {
   padding: 0 1rem;
 }
 
-@media only screen and (max-width: 420px) {
+.text p {
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
   body > nav ul {
     display: block;
   }
@@ -756,7 +760,8 @@ nav ul li a:visited {
   text-align: center;
   font-size: clamp(2rem, 5vw, 4.7rem);
   margin: 0;
-  font-family: apple-garamond;
+  font-family: var(--header);
+  font-variation-settings: var(--button-weight);
 }
 
 .about-me ul li a {
