@@ -330,19 +330,19 @@ nav ul {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  max-width: 1280px;
+  max-width: var(--body-width);
   margin: auto;
+  font-family: var(--header);
 }
 
 nav ul li:first-child a {
-  font-family: constructivist;
   font-size: 3rem;
+  font-variation-settings: 'wght' 850;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-family: apple-garamond;
   font-weight: bold;
 }
 
