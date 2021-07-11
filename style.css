@@ -258,12 +258,18 @@ h2 {
 .home footer {
   display: flex;
   flex-direction: column-reverse;
-  position: absolute;
-  bottom: 2rem;
+  grid-area: footer;
+}
+
+.posts {
+  max-width: var(--body-width);
+  margin: auto;
+  grid-area: posts;
 }
 
 .posts h2 {
   text-transform: uppercase;
+  font-family: var(--header);
 }
 
 .posts h2 span {
@@ -272,6 +278,10 @@ h2 {
 
 .posts h2:hover span {
   animation: spin 1s ease;
+}
+
+.posts ul {
+  line-height: 1.5;
 }
 
 .posts ul li a {
