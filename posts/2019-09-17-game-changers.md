@@ -15,7 +15,7 @@ As well as nutrition, the film also takes on the link between meat and masculini
 
 <figure>
   <div class="video-wrapper">
-    <iframe loading="lazy" src="http://www.youtube.com/embed/v9e4QD1zm0Q" allowfullscreen="" frameborder="0" title="Manthem, Burger King commercial"></iframe>
+    <iframe loading="lazy" src="https://www.youtube.com/embed/v9e4QD1zm0Q" allowfullscreen="" frameborder="0" title="Manthem, Burger King commercial"></iframe>
   </div>
   <figcaption>
     One of the most famous examples of this type of commercial, Burger King's "Manthem."
