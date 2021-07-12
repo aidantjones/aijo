@@ -11,7 +11,8 @@ const markdownLib = markdownIt({
 })
   .use(require('markdown-it-anchor'), {
     permalink: true,
-    permalinkBefore: true
+    permalinkBefore: true,
+    permalinkSymbol: ''
   })
   .use(require("markdown-it-toc-done-right"), {
     level: 1
