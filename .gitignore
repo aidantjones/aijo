@@ -2,3 +2,5 @@
 .tags
 .tags1
 /node_modules
+/_site
+.lazyimages.json
