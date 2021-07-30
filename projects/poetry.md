@@ -5,7 +5,7 @@ layout: post
 tags: projects
 date: 2019-06-12
 image: "/assets/img/projects/emily.jpg"
-alt: 'Emily Dickinson as portrayed in the Apple TV+ series "Dickson" writing at her desk'
+alt: "Emily Dickinson as portrayed in the Apple TV+ series &quot;Dickson&quot; writing at her desk"
 ---
 
 I’m Nobody! Who are you?
