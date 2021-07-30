@@ -803,3 +803,16 @@ nav ul li a:visited {
   max-width: 600px;
   margin: auto;
 }
+
+.poetry-page header {
+  margin-bottom: 2rem;
+}
+
+.poetry-page article p {
+  line-height: 1.5;
+}
+
+.poetry-page hr {
+  max-width: 5rem;
+  margin: 2rem auto;
+}
