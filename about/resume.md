@@ -14,12 +14,12 @@ tags: about
 <section class="post-content">
 
 ## Languages
- - HTML (Expert)
+ - HTML (Advanced)
    - Specializes in W3C web accessibility standards
  - JavaScript (Intermediate)
- - CSS (Expert)
+ - CSS (Advanced)
  - PHP (Novice)
- - Liquid (Expert)
+ - Liquid (Advanced)
  - L<sup>a</sup>T<sub>e</sub>X (Novice)
 
 ## Software
