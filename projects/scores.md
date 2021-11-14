@@ -15,19 +15,25 @@ image: "/assets/img/projects/films/stranger/stairwell.jpg"
 
 ### [_The Stranger_](https://www.imdb.com/title/tt12788014)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lq6NAtBL_DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-wrapper landscape">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lq6NAtBL_DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 [Read more about _The Stranger_.](#the-stranger-2)
 
 ### [_Gross Little Worm_](https://www.imdb.com/title/tt15671048)
 
-<iframe src="https://player.vimeo.com/video/616448421?h=e796542d8e" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<div class="video-wrapper portrait">
+  <iframe src="https://player.vimeo.com/video/616448421?h=e796542d8e" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 [Read more about _Gross Little Worm_.](#gross-little-worm-2)
 
 ### Trailer for [_Sleeper Agent_](https://vimeo.com/399773493)
 
-<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSleeperAgentFilm%2Fvideos%2F216280852791954%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<div class="video-wrapper">
+  <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FSleeperAgentFilm%2Fvideos%2F216280852791954%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+</div>
 
 ### _Forest, No Moon_
 

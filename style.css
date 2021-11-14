@@ -745,7 +745,7 @@ nav ul li a:visited {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .post article {
     display: block;
   }
@@ -815,4 +815,8 @@ nav ul li a:visited {
 .poetry-page hr {
   max-width: 5rem;
   margin: 2rem auto;
+}
+
+.video-wrapper.portrait {
+  padding-bottom: 177%;
 }
